@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='loginForThree.css')}}">
+    <title >time task programe</title>
+</head>
+<body>
+    <!--login in form container-->
+    <main>
+        <h1 class="firstHeader">User login</h1>
+        <div class="border">
+            <form  method="post" action="{{ url_for('login') }}">
+            <!--Account input section-->
+            <div class="loginElement">
+                <label for="account">Account(student ID/Phone number/Emile):</label>
+                <input type="text" id="account" name="account" placeholder="Enter your account" required>
+             </div>
+             <br>
+             <!-- password input section-->
+             <div class="loginElement">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter 6-20 chars (letters+numbers)" 
+                size="30" required>
+
+             </div>
+             <br>
+        <div class="loginElement">
+            <a href="{{url_for('change_pwd')}}">forget password</a>
+            &nbsp;&nbsp;
+            <a href="{{url_for('register')}}">Register</a>
+        </div>
+        <br>
+        <button class="loginElement" type="submit">Login</button>
+    </form>
+
+        </div>
+
+    </main>
+</body>
+</html>

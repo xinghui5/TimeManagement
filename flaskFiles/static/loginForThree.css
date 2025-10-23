@@ -1,0 +1,32 @@
+.firstHeader{
+    color:cornflowerblue;
+    font-family:'Courier New', Courier, monospace;
+    font-size: x-large;
+    text-align: center;
+
+}
+.loginElement{
+    text-align:left;
+    padding: 2%;
+    
+}
+.border{
+   margin: auto;
+    padding: 3%;
+    width: 50%;
+    border: 2px,solid,silver;
+
+}
+#account,#password,#regaccount,#regphone,#regpassword,#username{
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+    
+}
+.bottom{
+    
+    margin: auto;
+    padding: 1%;
+    width: 50%;
+    border: 2px,solid,white;
+
+}

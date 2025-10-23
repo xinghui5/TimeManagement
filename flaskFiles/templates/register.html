@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='loginForThree.css')}}">
+    <title>time task programm</title>
+</head>
+<body>
+    <!-- register from container-->
+    <main>
+      <h1 class="firstHeader">register Page</h1>
+        <form action="/api/rigister" method="post">
+         <div class="border">
+            <!-- user name input sction-->
+             <div class="loginElement" >
+                <label for="username">Enter your username:</label>
+                <input type="text" id="username" name="username" placeholder="do not pass 30 chars" size="30" required>
+             </div>
+             <br>
+             
+             <!--- regAccount input section-->
+             <div class="loginElement">
+                <label for="regaccount">Account(student ID/Emile):</label>
+                <input type="text" id="regaccount" name="account" placeholder="Enter your account" required>
+             </div>
+             <br>
+             <!--- Phone number input section-->
+             <div class="loginElement">
+                <label for="regphone">Phone number:</label>
+                <input type="text" id="regphone" name="gaccount" placeholder="Enter your phone number"
+                size="30" required>
+             </div>
+             <br>
+             <!-- regpassword input section-->
+             <div class="loginElement">
+                <label for="regpassword">Password:</label>
+                <input type="password" id="regpassword" name="password" placeholder="Enter 6-20 chars (letters+numbers)" 
+                size="30" required>
+
+             </div>
+              <br>
+
+             <!-- repeat password input section-->
+             <div class="loginElement" >
+                <label for="rppassword">Renter the Password:</label>
+                <input type="password" id="rppassword" name="password_comfirm" placeholder="renter the password" size="30" required>
+
+             </div>
+         </div>
+            <div class="bottom">
+             <br>
+             <!-- go to login page -->
+             <div class="loginElement" >
+                <a href="{{url_for('login')}}">gotton the account go to login</a>
+             </div>
+             <br>
+             <!-- botton -->
+              <button class="loginElement" type="submit">Register</button>
+         </div>
+        </form>
+    </main>
+</body>
+</html>
